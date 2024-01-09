@@ -1,0 +1,21 @@
+.link {
+    display: block;
+    color: $textColorLight;
+    transition: color 0.2 ease;
+
+    &:hover {
+        color: lighter($textColorLight, 2);
+    }
+}
+
+.link-side {
+    margin-bottom: 15px;
+}
+
+.link-main {
+    color: $textColorDark;
+
+    &:hover {
+        color: lighter($secondColor, 2);
+    }
+}

@@ -1,0 +1,59 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    hyphens: auto;
+
+    & thead {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
+
+    & .colomn {
+        vertical-align: top;
+    }
+
+    & .colomn-1 {
+        width: 40%;
+        padding-right: 20px;
+        border-right: 1px solid $secondColor;
+    }
+
+    & .colomn-2 {
+        width: 60%;
+        padding-left: 20px;
+    }
+
+    & .highlight {
+        font-weight: bold;
+        font-family: 'Roboto-Bold', sans-serif;
+        font-weight: 500;
+    }
+
+    & .highlight-upper {
+        text-transform: uppercase;
+    }
+
+    & ul {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    & ul.last {
+        margin-bottom: 5px;
+    }
+
+    & .padding {
+        padding-bottom: 20px;
+    }
+
+    & .padding.last {
+        padding-bottom: 5px;
+    }
+}

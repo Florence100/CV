@@ -1,0 +1,35 @@
+.contacts {
+    width: 50%;
+}
+
+.location,
+.phone,
+.email {
+    display: flex;
+    align-items: center;
+    color: $textColorDark;
+    transition: color 0.2 ease;
+}
+
+a.email:hover,
+a.phone:hover {
+    color: $secondColor;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-value,
+.phone-value {
+    width: 100%;
+    height: 35px;
+    border-bottom: 1px solid $secondColor;
+    display: flex;
+    align-items: center;
+}

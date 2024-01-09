@@ -1,0 +1,18 @@
+body {
+    background: $bgColor;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-weight: 400;
+    color: $textColorDark;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+wrapper {
+    width: $paperWidth;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+}

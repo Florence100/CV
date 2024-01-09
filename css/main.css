@@ -1,0 +1,261 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+/* Common */
+nav, footer, header, section, main {
+  display: block; }
+
+ul, ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+img, svg {
+  max-width: 100%;
+  height: auto; }
+
+input::-ms-clear {
+  display: none; }
+
+button, input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer; }
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+label {
+  cursor: pointer; }
+
+@font-face {
+  font-family: 'Raleway-ExtraLight';
+  src: url("../../assets/fonts/raleway/Raleway-ExtraLight.ttf");
+  font-weight: 200; }
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url("../../assets/fonts/roboto/Roboto-Regular.ttf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url("../../assets/fonts/roboto/Roboto-Bold.ttf");
+  font-weight: 700; }
+
+body {
+  background: #e8eaf0;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Roboto-Regular', sans-serif;
+  font-weight: 400;
+  color: #2c3a4b;
+  font-size: 16px;
+  line-height: 1.2; }
+
+wrapper {
+  width: 935.25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto; }
+
+/*
+This file is used to contain all layout imports.
+It contains styles for the main layout components such as header, footer, navigation, etc..
+*/
+.page {
+  width: 935.25px;
+  min-height: 1318.7025px;
+  display: flex;
+  background: white;
+  border-radius: 6px; }
+
+.main-section {
+  width: 68%;
+  min-height: 100%;
+  padding: 35px 30px;
+  background: white;
+  border-radius: 0 6px 6px 0; }
+
+.side-section {
+  width: 32%;
+  min-height: 100%;
+  background: #425e56;
+  border-radius: 6px 0 0 6px;
+  padding: 35px;
+  color: #b9bbbe; }
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px; }
+
+.title {
+  color: #ac955b;
+  text-transform: uppercase;
+  margin: 25px 0;
+  font-family: 'Raleway-ExtraLight';
+  font-size: 16px; }
+
+.main-section h3.title {
+  color: #2c3a4b;
+  padding-bottom: 5px;
+  margin: 40px 0 20px 0;
+  border-bottom: 1px solid #ac955b; }
+
+h1.title {
+  color: #2c3a4b;
+  font-size: 40px;
+  margin: 0;
+  line-height: 1; }
+
+h2.title {
+  margin: 5px 0;
+  font-size: 18px; }
+
+.photo {
+  width: 100%;
+  height: 150px; }
+
+.photo img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  opacity: 0.85; }
+
+.progress {
+  width: 100%;
+  height: 4px;
+  border: none;
+  background-color: rgba(225, 225, 225, 0.15);
+  position: relative;
+  top: -10px; }
+
+.label {
+  cursor: default;
+  text-transform: uppercase;
+  font-size: 14px; }
+
+.progress::-moz-progress-bar {
+  border: none;
+  background-color: #ac955b; }
+
+.progress::-webkit-progress-bar {
+  border: none;
+  background-color: rgba(225, 225, 225, 0.15); }
+
+.progress::-webkit-progress-value {
+  background-color: #ac955b; }
+
+.link {
+  display: block;
+  color: #b9bbbe;
+  transition: color 0.2 ease; }
+  .link:hover {
+    color: #d9dbde; }
+
+.link-side {
+  margin-bottom: 15px; }
+
+.link-main {
+  color: #2c3a4b; }
+  .link-main:hover {
+    color: #ccb57b; }
+
+.personal-info {
+  width: 50%; }
+
+.contacts {
+  width: 50%; }
+
+.location,
+.phone,
+.email {
+  display: flex;
+  align-items: center;
+  color: #2c3a4b;
+  transition: color 0.2 ease; }
+
+a.email:hover,
+a.phone:hover {
+  color: #ac955b; }
+
+.icon {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.location-value,
+.phone-value {
+  width: 100%;
+  height: 35px;
+  border-bottom: 1px solid #ac955b;
+  display: flex;
+  align-items: center; }
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  hyphens: auto; }
+  .table thead {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px; }
+  .table .colomn {
+    vertical-align: top; }
+  .table .colomn-1 {
+    width: 40%;
+    padding-right: 20px;
+    border-right: 1px solid #ac955b; }
+  .table .colomn-2 {
+    width: 60%;
+    padding-left: 20px; }
+  .table .highlight {
+    font-weight: bold;
+    font-family: 'Roboto-Bold', sans-serif;
+    font-weight: 500; }
+  .table .highlight-upper {
+    text-transform: uppercase; }
+  .table ul {
+    margin-top: 20px;
+    margin-bottom: 40px; }
+  .table ul.last {
+    margin-bottom: 5px; }
+  .table .padding {
+    padding-bottom: 20px; }
+  .table .padding.last {
+    padding-bottom: 5px; }

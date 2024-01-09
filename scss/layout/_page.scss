@@ -1,0 +1,7 @@
+.page {
+    width: $paperWidth;
+    min-height: $paperHeight;
+    display: flex;
+    background: $bgMainSection;
+    border-radius: 6px;
+}

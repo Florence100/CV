@@ -1,0 +1,30 @@
+// .progress-bar {
+    .progress {
+        width: 100%;
+        height: 4px;
+        border: none;
+        background-color: $bgProgressColor;
+        position: relative;
+        top: -10px;
+    }
+
+    .label {
+        cursor: default;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    .progress::-moz-progress-bar {
+        border: none;
+        background-color: $secondColor;
+    }
+      
+    .progress::-webkit-progress-bar {
+        border: none;
+        background-color: $bgProgressColor;
+    }
+      
+    .progress::-webkit-progress-value {
+        background-color: $secondColor;
+    }
+// }
