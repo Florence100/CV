@@ -52,17 +52,17 @@ label {
 
 @font-face {
   font-family: 'Raleway-ExtraLight';
-  src: url("../../assets/fonts/raleway/Raleway-ExtraLight.ttf");
+  src: url("../assets/fonts/raleway/Raleway-ExtraLight.ttf");
   font-weight: 200; }
 
 @font-face {
   font-family: 'Roboto-Regular';
-  src: url("../../assets/fonts/roboto/Roboto-Regular.ttf");
+  src: url("../assets/fonts/roboto/Roboto-Regular.ttf");
   font-weight: 400; }
 
 @font-face {
   font-family: 'Roboto-Bold';
-  src: url("../../assets/fonts/roboto/Roboto-Bold.ttf");
+  src: url("../assets/fonts/roboto/Roboto-Bold.ttf");
   font-weight: 700; }
 
 body {
@@ -91,7 +91,8 @@ It contains styles for the main layout components such as header, footer, naviga
   min-height: 1318.7025px;
   display: flex;
   background: white;
-  border-radius: 6px; }
+  border-radius: 6px;
+  box-shadow: 5px 10px 30px rgba(70, 68, 68, 0.4); }
 
 .main-section {
   width: 68%;
@@ -195,14 +196,16 @@ h2.title {
 
 .location,
 .phone,
-.email {
+.email,
+.telegram {
   display: flex;
   align-items: center;
   color: #2c3a4b;
   transition: color 0.2 ease; }
 
 a.email:hover,
-a.phone:hover {
+a.phone:hover,
+a.telegram:hover {
   color: #ac955b; }
 
 .icon {
@@ -214,7 +217,7 @@ a.phone:hover {
   justify-content: center; }
 
 .location-value,
-.phone-value {
+.email-value {
   width: 100%;
   height: 35px;
   border-bottom: 1px solid #ac955b;
@@ -243,11 +246,11 @@ a.phone:hover {
     border-right: 1px solid #ac955b; }
   .table .colomn-2 {
     width: 60%;
-    padding-left: 20px; }
+    padding-left: 20px;
+    position: relative; }
   .table .highlight {
     font-weight: bold;
-    font-family: 'Roboto-Bold', sans-serif;
-    font-weight: 500; }
+    font-family: 'Roboto-Bold', sans-serif; }
   .table .highlight-upper {
     text-transform: uppercase; }
   .table ul {
@@ -259,3 +262,13 @@ a.phone:hover {
     padding-bottom: 20px; }
   .table .padding.last {
     padding-bottom: 5px; }
+
+.decor {
+  width: 8px;
+  height: 8px;
+  background-image: url("../../assets/cvg/circle.svg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: -4px; }

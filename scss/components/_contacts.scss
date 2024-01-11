@@ -4,7 +4,8 @@
 
 .location,
 .phone,
-.email {
+.email,
+.telegram {
     display: flex;
     align-items: center;
     color: $textColorDark;
@@ -12,7 +13,8 @@
 }
 
 a.email:hover,
-a.phone:hover {
+a.phone:hover,
+a.telegram:hover {
     color: $secondColor;
 }
 
@@ -26,7 +28,7 @@ a.phone:hover {
 }
 
 .location-value,
-.phone-value {
+.email-value {
     width: 100%;
     height: 35px;
     border-bottom: 1px solid $secondColor;
