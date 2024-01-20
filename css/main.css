@@ -81,6 +81,11 @@ wrapper {
   align-items: center;
   justify-content: center;
   margin: 50px auto; }
+  @media screen and (max-width: 1279px) {
+    wrapper {
+      width: 100%;
+      padding: 10px;
+      margin: 0 auto; } }
 
 /*
 This file is used to contain all layout imports.
@@ -88,6 +93,7 @@ It contains styles for the main layout components such as header, footer, naviga
 */
 .page {
   width: 935.25px;
+  max-width: 100%;
   min-height: 1318.7025px;
   display: flex;
   background: white;
@@ -100,6 +106,9 @@ It contains styles for the main layout components such as header, footer, naviga
   padding: 35px 30px;
   background: white;
   border-radius: 0 6px 6px 0; }
+  @media screen and (max-width: 1279px) and (orientation: portrait) {
+    .main-section {
+      padding: 35px 20px; } }
 
 .side-section {
   width: 32%;
@@ -108,11 +117,18 @@ It contains styles for the main layout components such as header, footer, naviga
   border-radius: 6px 0 0 6px;
   padding: 35px;
   color: #b9bbbe; }
+  @media screen and (max-width: 1279px) and (orientation: portrait) {
+    .side-section {
+      padding: 35px 20px; } }
 
 .header {
   display: flex;
   align-items: center;
   margin-bottom: 60px; }
+  @media screen and (max-width: 1279px) and (orientation: portrait) {
+    .header {
+      flex-direction: column-reverse;
+      align-items: end; } }
 
 .title {
   color: #ac955b;
@@ -190,9 +206,17 @@ h2.title {
 
 .personal-info {
   width: 50%; }
+  @media screen and (max-width: 1279px) and (orientation: portrait) {
+    .personal-info {
+      width: 100%;
+      margin-top: 20px; } }
 
 .contacts {
   width: 50%; }
+  @media screen and (max-width: 1279px) and (orientation: portrait) {
+    .contacts {
+      max-width: 100%;
+      width: 300px; } }
 
 .location,
 .phone,
@@ -217,7 +241,8 @@ a.telegram:hover {
   justify-content: center; }
 
 .location-value,
-.email-value {
+.email-value,
+.telegram-value {
   width: 100%;
   height: 35px;
   border-bottom: 1px solid #ac955b;
@@ -244,10 +269,18 @@ a.telegram:hover {
     width: 40%;
     padding-right: 20px;
     border-right: 1px solid #ac955b; }
+    @media screen and (max-width: 1279px) {
+      .table .colomn-1 {
+        width: 35%;
+        padding-right: 15px; } }
   .table .colomn-2 {
     width: 60%;
     padding-left: 20px;
     position: relative; }
+    @media screen and (max-width: 1279px) {
+      .table .colomn-2 {
+        width: 65%;
+        padding-left: 15px; } }
   .table .highlight {
     font-weight: bold;
     font-family: 'Roboto-Bold', sans-serif; }
@@ -256,6 +289,9 @@ a.telegram:hover {
   .table ul {
     margin-top: 20px;
     margin-bottom: 40px; }
+    @media screen and (max-width: 1279px) {
+      .table ul {
+        margin-bottom: 30px; } }
   .table ul.last {
     margin-bottom: 5px; }
   .table .padding {
@@ -266,7 +302,7 @@ a.telegram:hover {
 .decor {
   width: 8px;
   height: 8px;
-  background-image: url("../../assets/cvg/circle.svg");
+  background-image: url("../assets/cvg/circle.svg");
   background-size: cover;
   background-position: center;
   position: absolute;

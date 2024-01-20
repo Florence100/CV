@@ -1,6 +1,5 @@
 $mainColor: rgb(66, 94, 86);
 $secondColor: rgb(172, 149, 91);
-// $secondColor: rgb(200, 136, 75);
 $bgColor: rgb(232, 234, 240);
 $bgMainSection: rgb(255, 255, 255);
 $bgSideSection: $mainColor;
@@ -9,5 +8,10 @@ $textColorLight: rgb(185, 187, 190);
 $textColorDark: rgb(44, 58, 75);
 $titleColor: $secondColor;
 
-$paperWidth: 645px * 1.45;
+$paperWidth: 645px * 1.45; //935
 $paperHeight: 1.41 * $paperWidth;
+$paperWidthTabletHoriz: 100%;
+
+//break points
+$breakPointTablet: 1279px;
+$breakPointMobal: 767px;

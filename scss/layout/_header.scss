@@ -2,4 +2,9 @@
     display: flex;
     align-items: center;
     margin-bottom: 60px;
+
+    @media screen and (max-width: $breakPointTablet) and (orientation: portrait) {
+        flex-direction: column-reverse;
+        align-items: end;
+    }
 }

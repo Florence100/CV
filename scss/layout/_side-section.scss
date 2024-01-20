@@ -5,4 +5,8 @@
     border-radius: 6px 0 0 6px;
     padding: 35px;
     color: $textColorLight;
+
+    @media screen and (max-width: $breakPointTablet) and (orientation: portrait) {
+        padding: 35px 20px;
+    }
 }

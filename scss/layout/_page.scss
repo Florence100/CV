@@ -1,5 +1,6 @@
 .page {
     width: $paperWidth;
+    max-width: 100%;
     min-height: $paperHeight;
     display: flex;
     background: $bgMainSection;
