@@ -8,4 +8,10 @@
     @media screen and (max-width: $breakPointTablet) and (orientation: portrait) {
         padding: 35px 20px;
     }
+
+    @media screen and (max-width: $breakPointMobal) {
+        width: 100%;
+        border-radius: 0;
+        padding: 35px 30px;
+    }
 }

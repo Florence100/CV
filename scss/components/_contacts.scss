@@ -5,6 +5,22 @@
         max-width: 100%;
         width: 300px;
     }
+
+    @media screen and (max-width: $breakPointMobal) {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+    }
+}
+
+.contacts-info {
+    width: 100%;
+
+    @media screen and (max-width: $breakPointMobal) {
+        width: 300px;
+    }
+
 }
 
 .location,

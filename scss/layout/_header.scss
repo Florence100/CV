@@ -7,4 +7,8 @@
         flex-direction: column-reverse;
         align-items: end;
     }
+
+    @media screen and (max-width: $breakPointMobal) {
+        // position: relative;
+    }
 }
