@@ -4,7 +4,7 @@
     transition: color 0.2 ease;
 
     &:hover {
-        color: lighter($textColorLight, 2);
+        color: $secondColor;
     }
 }
 
@@ -16,6 +16,6 @@
     color: $textColorDark;
 
     &:hover {
-        color: lighter($secondColor, 2);
+        color: $secondColor;
     }
 }

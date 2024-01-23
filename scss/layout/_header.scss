@@ -2,13 +2,16 @@
     display: flex;
     align-items: center;
     margin-bottom: 60px;
+    padding: 35px 30px;
 
-    @media screen and (max-width: $breakPointTablet) and (orientation: portrait) {
+    @media screen and (max-width: $breakPointTablet) {
         flex-direction: column-reverse;
         align-items: end;
+        padding: 35px 20px 0 20px;
     }
 
     @media screen and (max-width: $breakPointMobal) {
-        // position: relative;
+        background: $bgDark;
+        padding: 50px 35px 35px 40px;
     }
 }

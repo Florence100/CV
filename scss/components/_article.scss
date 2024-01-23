@@ -1,12 +1,11 @@
-.personal-info {
-    width: 50%;
+article {
+    padding: 0 30px;
 
     @media screen and (max-width: $breakPointTablet) {
-        width: 100%;
-        margin-top: 20px;
+        padding: 0 20px;
     }
 
     @media screen and (max-width: $breakPointMobal) {
-        margin-top: 70px;
+        padding: 0 35px;
     }
 }

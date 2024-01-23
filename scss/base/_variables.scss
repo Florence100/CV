@@ -1,8 +1,8 @@
 $mainColor: rgb(66, 94, 86);
 $secondColor: rgb(172, 149, 91);
 $bgColor: rgb(232, 234, 240);
-$bgMainSection: rgb(255, 255, 255);
-$bgSideSection: $mainColor;
+$bgLight: rgb(255, 255, 255);
+$bgDark: $mainColor;
 $bgProgressColor: rgba(225, 225, 225, 0.15);
 $textColorLight: rgb(185, 187, 190);
 $textColorDark: rgb(44, 58, 75);
@@ -14,5 +14,11 @@ $paperWidthTabletHoriz: 100%;
 
 //break points
 $breakPointTablet: 1279px;
-$breakPointMobal: 767px;
+$breakPointMobal: 768px;
 $breakPointMobalSmall: 550px;
+
+// media:
+/* tablet */
+// @media screen and (max-width: $breakPointTablet) {}
+/* mobile */
+// @media (max-width: $breakPointMobal) {}
