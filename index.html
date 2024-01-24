@@ -17,7 +17,7 @@
                 <div class="photo">
                     <img src="./assets/img/photo.jpg" alt="photo">
                 </div>
-                <article>
+                <article class="article article-side">
                     <h3 class="title">skills</h3>
                     <div class="progress-bar">
                         <label class="label" for="js">JavaScript, TypeScript</label>
@@ -56,26 +56,42 @@
                         <progress class="progress" id="php" max="100" value="40">40%</progress>
                     </div>
                 </article>
-                <article>
-                    <h3 class="title">projects</h3>
-                    <ul>
-                        <li><a class="link link-side" href="https://rolling-scopes-school.github.io/florence100-JSFE2022Q3/online-zoo/pages/main/index.html">Online zoo</a></li>
-                        <li><a class="link link-side" href="https://graphiql-app-rs.netlify.app/">Playground/IDE for GraphQL</a></li>
-                        <li><a class="link link-side" href="https://rolling-scopes-school.github.io/florence100-JSFE2022Q3/songbird/game.html">Online quiz</a></li>
-                        <li><a class="link link-side" href="https://rolling-scopes-school.github.io/florence100-JSFE2022Q3/gem-puzzle/">Gem puzzle</a></li>
-                    </ul>
-                </article>
-                <article>
-                    <h3 class="title">languages</h3>
-                    <div class="progress-bar">
-                        <label class="label" for="english">English</label>
-                        <progress class="progress" id="english" max="100" value="40">40%</progress>
-                    </div>
-                    <div class="progress-bar">
-                        <label class="label" for="german">German</label>
-                        <progress class="progress" id="german" max="100" value="40">40%</progress>
-                    </div>
-                </article>
+                <div class="article-wrapper">
+                    <article class="article article-side">
+                        <h3 class="title">projects</h3>
+                        <ul class="list">
+                            <li class="list-item"><a class="link link-side" href="https://rolling-scopes-school.github.io/florence100-JSFE2022Q3/online-zoo/pages/main/index.html">Online zoo</a></li>
+                            <li class="list-item"><a class="link link-side" href="https://graphiql-app-rs.netlify.app/">Playground/IDE for GraphQL</a></li>
+                            <li class="list-item"><a class="link link-side" href="https://rolling-scopes-school.github.io/florence100-JSFE2022Q3/songbird/game.html">Online quiz</a></li>
+                            <li class="list-item"><a class="link link-side" href="https://rolling-scopes-school.github.io/florence100-JSFE2022Q3/gem-puzzle/">Gem puzzle</a></li>
+                        </ul>
+                    </article>
+                    <article class="article article-side">
+                        <h3 class="title">languages</h3>
+                            <ul class="list">
+                                <li class="list-item">
+                                    <div class="item-name">english</div>
+                                    <div class="item-value">A2</div>
+                                </li>
+                                <li class="list-item">
+                                    <div class="item-name">german</div>
+                                    <div class="item-value">A1</div>
+                                </li>
+                                <li class="list-item">
+                                    <div class="item-name">Russian</div>
+                                    <div class="item-value">native</div>
+                                </li>
+                            </ul>
+                        <!-- <div class="progress-bar">
+                            <label class="label" for="english">English</label>
+                            <progress class="progress" id="english" max="100" value="40">40%</progress>
+                        </div>
+                        <div class="progress-bar">
+                            <label class="label" for="german">German</label>
+                            <progress class="progress" id="german" max="100" value="40">40%</progress>
+                        </div> -->
+                    </article>
+                </div>
             </section>
             <section class="main-section">
                 <header class="header">
@@ -92,11 +108,6 @@
                                 <div class="location-icon icon"><i class="fa-solid fa-location-dot" style="color: #ac955b;"></i></div>
                                 <div class="location-value">Belarus, Mogilev</div>
                             </div>
-                            <!-- <a class="phone" href="tel:+37529...">
-                                <div class="phone-icon icon"><i class="fa-solid fa-phone" style="color: #ac955b;"></i></div>
-                                <div class="phone-value"></div>
-                            </a> -->
-
                             <a class="email" href="mailto:anastasia.gribovskaia@gmail.com">
                                 <div class="email-icon icon"><i class="fa-solid fa-envelope" style="color: #ac955b;"></i></div>
                                 <div class="email-value">anastasia.gribovskaia@gmail.com</div>
@@ -108,13 +119,13 @@
                         </div>
                     </div>
                 </header>
-                <article>
+                <article class="article">
                     <h3 class="title">about me</h3>
                     <div>My main qualities are dependability, stress resistance, sense of purpose and love
                         for learning. I am attentive to details and well organized which, to help me to achieve 
                         high results in my work.</div>
                 </article>
-                <article>
+                <article class="article">
                     <h3 class="title">work experience</h3>
                     <table class="table">
                         <thead>
@@ -156,7 +167,7 @@
                         </tbody>
                     </table>
                 </article>
-                <article>
+                <article class="article">
                     <h3 class="title">education</h3>
                     <table class="table">
                         <thead>
@@ -180,7 +191,7 @@
                         </tbody>
                     </table>
                 </article>
-                <article>
+                <article class="article">
                     <h3 class="title">courses</h3>
                     <table class="table">
                         <thead>

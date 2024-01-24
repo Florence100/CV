@@ -2,18 +2,15 @@
     width: 68%;
     min-height: 100%;
     padding-bottom: 40px;
-    // padding: 35px 30px;
     background: $bgLight;
     border-radius: 0 6px 6px 0;
-
-    // @media screen and (max-width: $breakPointTablet) and (orientation: portrait) {
-    @media screen and (max-width: $breakPointTablet) {
-        // padding: 35px 20px;
-    }
 
     @media screen and (max-width: $breakPointMobal) {
         width: 100%;
         border-radius: 0;
-        // padding: 50px 35px 35px 40px;
+    }
+
+    @media screen and (max-width: $breakPointMobalMedium) {
+        padding-bottom: 35px;
     }
 }

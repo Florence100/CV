@@ -4,6 +4,10 @@
     margin: 25px 0;
     font-family: 'Raleway-ExtraLight';
     font-size: 16px;
+
+    @media screen and (max-width: $breakPointMobalMedium) {
+        // margin: 10px 0;
+    }
 }
 
 .main-section h3.title {
@@ -22,9 +26,17 @@ h1.title {
     @media screen and (max-width: $breakPointMobal) {
         color: $textColorLight;
     }
+
+    @media screen and (max-width: $breakPointMobalMedium) {
+        font-size: 34px;
+    }
 }
 
 h2.title {
     margin: 5px 0;
     font-size: 18px;
+
+    @media screen and (max-width: $breakPointMobalMedium) {
+        font-size: 16px;
+    }
 }

@@ -6,7 +6,11 @@ body {
     font-weight: 400;
     color: $textColorDark;
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.5;
+
+    @media screen and (max-width: $breakPointMobalMedium) {
+        font-size: 14px;
+    }
 }
 
 wrapper {

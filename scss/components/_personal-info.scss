@@ -7,6 +7,11 @@
     }
 
     @media screen and (max-width: $breakPointMobal) {
-        margin-top: 70px;
+        margin-top: 50px;
+    }
+
+    @media screen and (max-width: $breakPointMobalMedium) {
+        margin-top: 195px;
+        text-align: center;
     }
 }

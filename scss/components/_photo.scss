@@ -1,7 +1,7 @@
 .photo {
     width: 100%;
     height: 150px;
-    margin: 35px 0 60px 0;
+    margin-bottom: 60px;
 
     @media screen and (max-width: $breakPointMobal) {
         display: none;
@@ -14,7 +14,7 @@
     height: 150px;
     border-radius: 50%;
     margin: 0 auto;
-    opacity: 0.85;
+    opacity: 0.8;
 }
 
 .photo-mobile {
@@ -23,5 +23,11 @@
     @media screen and (max-width: $breakPointMobal) {
         display: block;
         margin: 0;
+    }
+
+    @media screen and (max-width: $breakPointMobalMedium) {
+        position: absolute;
+        top: 50px;
+        left: 0;
     }
 }

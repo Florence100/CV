@@ -12,6 +12,13 @@
 
     @media screen and (max-width: $breakPointMobal) {
         background: $bgDark;
-        padding: 50px 35px 35px 40px;
+        padding: 50px 35px 35px 35px;
+        border: 1px dashed white;
+    }
+
+    @media screen and (max-width: $breakPointMobalMedium) {
+        flex-direction: column;
+        padding: 50px 15px 35px 10px;
+        margin-bottom: 0px;
     }
 }

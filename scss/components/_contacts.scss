@@ -11,6 +11,10 @@
         display: flex;
         justify-content: space-between;
     }
+
+    @media screen and (max-width: $breakPointMobalMedium) {
+        justify-content: center;
+    }
 }
 
 .contacts-info {
@@ -19,6 +23,11 @@
     @media screen and (max-width: $breakPointMobal) {
         width: 300px;
         margin-left: 40px;
+    }
+
+    @media screen and (max-width: $breakPointMobalMedium) {
+        margin-left: 0;
+        margin-top: 30px;
     }
 
 }

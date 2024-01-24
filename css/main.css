@@ -75,7 +75,10 @@ body {
   font-weight: 400;
   color: #2c3a4b;
   font-size: 16px;
-  line-height: 1.2; }
+  line-height: 1.5; }
+  @media screen and (max-width: 560px) {
+    body {
+      font-size: 14px; } }
 
 wrapper {
   width: 935.25px;
@@ -88,7 +91,7 @@ wrapper {
       width: 100%;
       padding: 10px;
       margin: 0 auto; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     wrapper {
       padding: 0; } }
 
@@ -104,7 +107,7 @@ It contains styles for the main layout components such as header, footer, naviga
   background: white;
   border-radius: 6px;
   box-shadow: 5px 10px 30px rgba(70, 68, 68, 0.4); }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .page {
       width: 100%;
       border-radius: 0px;
@@ -116,23 +119,34 @@ It contains styles for the main layout components such as header, footer, naviga
   padding-bottom: 40px;
   background: white;
   border-radius: 0 6px 6px 0; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .main-section {
       width: 100%;
       border-radius: 0; } }
+  @media screen and (max-width: 560px) {
+    .main-section {
+      padding-bottom: 35px; } }
 
 .side-section {
   width: 32%;
   min-height: 100%;
   background: #425e56;
   border-radius: 6px 0 0 6px;
-  color: #b9bbbe; }
-  @media screen and (max-width: 768px) {
+  color: #b9bbbe;
+  padding: 35px 30px; }
+  @media screen and (max-width: 767px) {
     .side-section {
       width: 100%;
       min-height: auto;
       border-radius: 0;
-      padding: 20px 0 40px 0; } }
+      padding: 20px 35px 40px 35px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0 35px;
+      align-items: flex-start; } }
+  @media screen and (max-width: 560px) {
+    .side-section {
+      padding: 20px 10px 40px 10px; } }
 
 .header {
   display: flex;
@@ -144,10 +158,16 @@ It contains styles for the main layout components such as header, footer, naviga
       flex-direction: column-reverse;
       align-items: end;
       padding: 35px 20px 0 20px; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .header {
       background: #425e56;
-      padding: 50px 35px 35px 40px; } }
+      padding: 50px 35px 35px 35px;
+      border: 1px dashed white; } }
+  @media screen and (max-width: 560px) {
+    .header {
+      flex-direction: column;
+      padding: 50px 15px 35px 10px;
+      margin-bottom: 0px; } }
 
 .title {
   color: #ac955b;
@@ -167,19 +187,25 @@ h1.title {
   font-size: 40px;
   margin: 0;
   line-height: 1; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     h1.title {
       color: #b9bbbe; } }
+  @media screen and (max-width: 560px) {
+    h1.title {
+      font-size: 34px; } }
 
 h2.title {
   margin: 5px 0;
   font-size: 18px; }
+  @media screen and (max-width: 560px) {
+    h2.title {
+      font-size: 16px; } }
 
 .photo {
   width: 100%;
   height: 150px;
-  margin: 35px 0 60px 0; }
-  @media screen and (max-width: 768px) {
+  margin-bottom: 60px; }
+  @media screen and (max-width: 767px) {
     .photo {
       display: none; } }
 
@@ -189,14 +215,19 @@ h2.title {
   height: 150px;
   border-radius: 50%;
   margin: 0 auto;
-  opacity: 0.85; }
+  opacity: 0.8; }
 
 .photo-mobile {
   display: none; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .photo-mobile {
       display: block;
       margin: 0; } }
+  @media screen and (max-width: 560px) {
+    .photo-mobile {
+      position: absolute;
+      top: 50px;
+      left: 0; } }
 
 .progress {
   width: 100%;
@@ -229,9 +260,6 @@ h2.title {
   .link:hover {
     color: #ac955b; }
 
-.link-side {
-  margin-bottom: 15px; }
-
 .link-main {
   color: #2c3a4b; }
   .link-main:hover {
@@ -243,9 +271,13 @@ h2.title {
     .personal-info {
       width: 100%;
       margin-top: 20px; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .personal-info {
-      margin-top: 70px; } }
+      margin-top: 50px; } }
+  @media screen and (max-width: 560px) {
+    .personal-info {
+      margin-top: 195px;
+      text-align: center; } }
 
 .contacts {
   width: 50%; }
@@ -253,18 +285,25 @@ h2.title {
     .contacts {
       max-width: 100%;
       width: 300px; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .contacts {
       width: 100%;
       display: flex;
       justify-content: space-between; } }
+  @media screen and (max-width: 560px) {
+    .contacts {
+      justify-content: center; } }
 
 .contacts-info {
   width: 100%; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .contacts-info {
       width: 300px;
       margin-left: 40px; } }
+  @media screen and (max-width: 560px) {
+    .contacts-info {
+      margin-left: 0;
+      margin-top: 30px; } }
 
 .location,
 .phone,
@@ -274,7 +313,7 @@ h2.title {
   align-items: center;
   color: #2c3a4b;
   transition: color 0.2 ease; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .location,
     .phone,
     .email,
@@ -346,6 +385,10 @@ a.telegram:hover {
     @media screen and (max-width: 1279px) {
       .table ul {
         margin-bottom: 30px; } }
+    @media screen and (max-width: 560px) {
+      .table ul {
+        margin-top: 10px;
+        margin-bottom: 20px; } }
   .table ul.last {
     margin-bottom: 5px; }
   .table .padding {
@@ -363,11 +406,38 @@ a.telegram:hover {
   top: 0;
   left: -4px; }
 
-article {
+.article {
   padding: 0 30px; }
   @media screen and (max-width: 1279px) {
-    article {
+    .article {
       padding: 0 20px; } }
-  @media screen and (max-width: 768px) {
-    article {
+  @media screen and (max-width: 767px) {
+    .article {
       padding: 0 35px; } }
+  @media screen and (max-width: 560px) {
+    .article {
+      padding: 0 10px; } }
+  .article.article-side {
+    padding: 0; }
+    @media screen and (max-width: 767px) {
+      .article.article-side {
+        min-width: 170px;
+        flex-grow: 1;
+        flex-basis: 0; } }
+
+@media screen and (max-width: 767px) {
+  .article-wrapper {
+    min-width: 170px;
+    flex-grow: 1;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between; } }
+
+.list .list-item {
+  display: flex;
+  justify-content: space-between; }
+  .list .list-item:not(:last-child) {
+    margin-bottom: 15px; }
+  .list .list-item .item-name {
+    text-transform: uppercase; }
