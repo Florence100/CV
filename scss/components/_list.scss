@@ -1,6 +1,6 @@
 .list .list-item {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
 
     &:not(:last-child) {
         margin-bottom: 15px;
@@ -8,5 +8,6 @@
 
     & .item-name {
         text-transform: uppercase;
+        margin-right: 20px;
     }
 }

@@ -1,0 +1,22 @@
+.extra-features {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+
+    @media screen and (max-width: $breakPointTablet) {
+        top: 35px;
+        left: 20px;
+    }
+
+    @media screen and (max-width: $breakPointMobal) {
+        top: 25px;
+        left: auto;
+        right: 35px;
+    }
+
+    @media screen and (max-width: $breakPointMobalMedium) {
+        top: 15px;
+        right: 15px;
+    }
+}

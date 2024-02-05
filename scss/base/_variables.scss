@@ -9,6 +9,7 @@ $textColorDark: rgb(44, 58, 75);
 $titleColor: $secondColor;
 
 $paperWidth: 645px * 1.45; //935
+// $paperWidth: 645px * 1.4;
 $paperHeight: 1.41 * $paperWidth;
 $paperWidthTabletHoriz: 100%;
 
@@ -16,9 +17,3 @@ $paperWidthTabletHoriz: 100%;
 $breakPointTablet: 1279px;
 $breakPointMobal: 767px;
 $breakPointMobalMedium: 560px;
-
-// media:
-/* tablet */
-// @media screen and (max-width: $breakPointTablet) {}
-/* mobile */
-// @media (max-width: $breakPointMobal) {}

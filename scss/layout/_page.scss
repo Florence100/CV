@@ -4,12 +4,17 @@
     min-height: $paperHeight;
     display: flex;
     background: $bgLight;
-    border-radius: 6px;
-    box-shadow: 5px 10px 30px rgba(70, 68, 68, 0.4);
+    // border-radius: 6px;
+    // box-shadow: 5px 10px 30px rgba(70, 68, 68, 0.4);
+
+    @media screen and (max-width: $breakPointTablet) {
+        // width: 100%;
+        border-radius: 0px;
+    }
 
     @media screen and (max-width: $breakPointMobal) {
         width: 100%;
-        border-radius: 0px;
+        // border-radius: 0px;
         flex-direction: column-reverse;
     }
 }

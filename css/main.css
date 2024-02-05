@@ -50,8 +50,6 @@ button::-moz-focus-inner {
 label {
   cursor: pointer; }
 
-/* tablet */
-/* mobile */
 @font-face {
   font-family: 'Raleway-ExtraLight';
   src: url("../assets/fonts/raleway/Raleway-ExtraLight.ttf");
@@ -85,11 +83,11 @@ wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 50px auto; }
+  margin: 10px auto; }
   @media screen and (max-width: 1279px) {
     wrapper {
       width: 100%;
-      padding: 10px;
+      padding: 0;
       margin: 0 auto; } }
   @media screen and (max-width: 767px) {
     wrapper {
@@ -104,13 +102,13 @@ It contains styles for the main layout components such as header, footer, naviga
   max-width: 100%;
   min-height: 1318.7025px;
   display: flex;
-  background: white;
-  border-radius: 6px;
-  box-shadow: 5px 10px 30px rgba(70, 68, 68, 0.4); }
+  background: white; }
+  @media screen and (max-width: 1279px) {
+    .page {
+      border-radius: 0px; } }
   @media screen and (max-width: 767px) {
     .page {
       width: 100%;
-      border-radius: 0px;
       flex-direction: column-reverse; } }
 
 .main-section {
@@ -131,14 +129,12 @@ It contains styles for the main layout components such as header, footer, naviga
   width: 32%;
   min-height: 100%;
   background: #425e56;
-  border-radius: 6px 0 0 6px;
   color: #b9bbbe;
   padding: 35px 30px; }
   @media screen and (max-width: 767px) {
     .side-section {
       width: 100%;
       min-height: auto;
-      border-radius: 0;
       padding: 20px 35px 40px 35px;
       display: flex;
       flex-wrap: wrap;
@@ -146,13 +142,14 @@ It contains styles for the main layout components such as header, footer, naviga
       align-items: flex-start; } }
   @media screen and (max-width: 560px) {
     .side-section {
-      padding: 20px 10px 40px 10px; } }
+      padding: 20px 15px 40px 15px; } }
 
 .header {
   display: flex;
   align-items: center;
   margin-bottom: 60px;
-  padding: 35px 30px; }
+  padding: 70px 30px;
+  position: relative; }
   @media screen and (max-width: 1279px) {
     .header {
       flex-direction: column-reverse;
@@ -161,12 +158,11 @@ It contains styles for the main layout components such as header, footer, naviga
   @media screen and (max-width: 767px) {
     .header {
       background: #425e56;
-      padding: 50px 35px 35px 35px;
-      border: 1px dashed white; } }
+      padding: 50px 35px 35px 35px; } }
   @media screen and (max-width: 560px) {
     .header {
       flex-direction: column;
-      padding: 50px 15px 35px 10px;
+      padding: 50px 15px 35px 15px;
       margin-bottom: 0px; } }
 
 .title {
@@ -179,7 +175,7 @@ It contains styles for the main layout components such as header, footer, naviga
 .main-section h3.title {
   color: #2c3a4b;
   padding-bottom: 5px;
-  margin: 40px 0 20px 0;
+  margin: 25px 0 20px 0;
   border-bottom: 1px solid #ac955b; }
 
 h1.title {
@@ -195,7 +191,7 @@ h1.title {
       font-size: 34px; } }
 
 h2.title {
-  margin: 5px 0;
+  margin: 5px 0 0 0;
   font-size: 18px; }
   @media screen and (max-width: 560px) {
     h2.title {
@@ -270,7 +266,7 @@ h2.title {
   @media screen and (max-width: 1279px) {
     .personal-info {
       width: 100%;
-      margin-top: 20px; } }
+      margin-top: 40px; } }
   @media screen and (max-width: 767px) {
     .personal-info {
       margin-top: 50px; } }
@@ -302,6 +298,7 @@ h2.title {
       margin-left: 40px; } }
   @media screen and (max-width: 560px) {
     .contacts-info {
+      width: 270px;
       margin-left: 0;
       margin-top: 30px; } }
 
@@ -416,7 +413,7 @@ a.telegram:hover {
       padding: 0 35px; } }
   @media screen and (max-width: 560px) {
     .article {
-      padding: 0 10px; } }
+      padding: 0 15px; } }
   .article.article-side {
     padding: 0; }
     @media screen and (max-width: 767px) {
@@ -424,6 +421,9 @@ a.telegram:hover {
         min-width: 170px;
         flex-grow: 1;
         flex-basis: 0; } }
+
+.main-section .article {
+  padding-bottom: 15px; }
 
 @media screen and (max-width: 767px) {
   .article-wrapper {
@@ -435,9 +435,28 @@ a.telegram:hover {
     align-content: space-between; } }
 
 .list .list-item {
-  display: flex;
-  justify-content: space-between; }
+  display: flex; }
   .list .list-item:not(:last-child) {
     margin-bottom: 15px; }
   .list .list-item .item-name {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-right: 20px; }
+
+.extra-features {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer; }
+  @media screen and (max-width: 1279px) {
+    .extra-features {
+      top: 35px;
+      left: 20px; } }
+  @media screen and (max-width: 767px) {
+    .extra-features {
+      top: 25px;
+      left: auto;
+      right: 35px; } }
+  @media screen and (max-width: 560px) {
+    .extra-features {
+      top: 15px;
+      right: 15px; } }

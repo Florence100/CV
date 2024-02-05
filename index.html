@@ -9,10 +9,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <body>
     <wrapper>
-        <div class="page">
+        <div class="page" id="page">
             <section class="side-section">
                 <div class="photo">
                     <img src="./assets/img/photo.jpg" alt="photo">
@@ -60,10 +62,10 @@
                     <article class="article article-side">
                         <h3 class="title">projects</h3>
                         <ul class="list">
-                            <li class="list-item"><a class="link link-side" href="https://rolling-scopes-school.github.io/florence100-JSFE2022Q3/online-zoo/pages/main/index.html">Online zoo</a></li>
-                            <li class="list-item"><a class="link link-side" href="https://graphiql-app-rs.netlify.app/">Playground/IDE for GraphQL</a></li>
-                            <li class="list-item"><a class="link link-side" href="https://rolling-scopes-school.github.io/florence100-JSFE2022Q3/songbird/game.html">Online quiz</a></li>
-                            <li class="list-item"><a class="link link-side" href="https://rolling-scopes-school.github.io/florence100-JSFE2022Q3/gem-puzzle/">Gem puzzle</a></li>
+                            <li class="list-item"><a class="link link-side" href="https://rolling-scopes-school.github.io/florence100-JSFE2022Q3/online-zoo/pages/main/index.html" target="_blank">Online zoo</a></li>
+                            <li class="list-item"><a class="link link-side" href="https://graphiql-app-rs.netlify.app/" target="_blank">Playground/IDE for GraphQL</a></li>
+                            <li class="list-item"><a class="link link-side" href="https://rolling-scopes-school.github.io/florence100-JSFE2022Q3/songbird/game.html" target="_blank">Online quiz</a></li>
+                            <li class="list-item"><a class="link link-side" href="https://rolling-scopes-school.github.io/florence100-JSFE2022Q3/gem-puzzle/" target="_blank">Gem puzzle</a></li>
                         </ul>
                     </article>
                     <article class="article article-side">
@@ -78,18 +80,10 @@
                                     <div class="item-value">A1</div>
                                 </li>
                                 <li class="list-item">
-                                    <div class="item-name">Russian</div>
+                                    <div class="item-name">russian</div>
                                     <div class="item-value">native</div>
                                 </li>
                             </ul>
-                        <!-- <div class="progress-bar">
-                            <label class="label" for="english">English</label>
-                            <progress class="progress" id="english" max="100" value="40">40%</progress>
-                        </div>
-                        <div class="progress-bar">
-                            <label class="label" for="german">German</label>
-                            <progress class="progress" id="german" max="100" value="40">40%</progress>
-                        </div> -->
                     </article>
                 </div>
             </section>
@@ -117,6 +111,9 @@
                                 <div class="telegram-value">@Florence1001</div>
                             </a>
                         </div>
+                    </div>
+                    <div class="extra-features">
+                        <div class="download-pdf"><i class="fa-solid fa-file-pdf fa-xl" style="color: #ac955b;"></i></div>
                     </div>
                 </header>
                 <article class="article">
@@ -208,7 +205,7 @@
                                 </td>
                                 <td class="colomn colomn-2">
                                     <div class="highlight">REACT 2023 Q1</div>
-                                    <a class="link link-main" href="https://app.rs.school/certificate/w6jh6q4k">Certificate</a>
+                                    <a class="link link-main" href="https://app.rs.school/certificate/w6jh6q4k" target="_blank">Certificate</a>
                                     <div class="decor"></div>
                                 </td>
                             </tr>
@@ -221,7 +218,7 @@
                                 </td>
                                 <td class="colomn colomn-2">
                                     <div class="highlight">JAVASCRIPT/FRONT-END 2022Q3</div>
-                                    <a class="link link-main" href="https://app.rs.school/certificate/iwsdp33t">Certificate</a>
+                                    <a class="link link-main" href="https://app.rs.school/certificate/iwsdp33t" target="_blank">Certificate</a>
                                     <div class="decor"></div>
                                 </td>
                             </tr>
@@ -234,7 +231,7 @@
                                 </td>
                                 <td class="colomn colomn-2">
                                     <div class="highlight">JAVASCRIPT/FRONT-END PRE-SCHOOL 2022Q2</div>
-                                    <a class="link link-main" href="https://app.rs.school/certificate/a4lxkqd7">Certificate</a>
+                                    <a class="link link-main" href="https://app.rs.school/certificate/a4lxkqd7" target="_blank">Certificate</a>
                                     <div class="decor"></div>
                                 </td>
                             </tr>
@@ -247,7 +244,7 @@
                                 </td>
                                 <td class="colomn colomn-2">
                                     <div class="highlight">Web programming</div>
-                                    <a class="link link-main" href="https://drive.google.com/file/d/1nbeEY4F_J_6KVphSEL-X8LsM8RS0YIih/view">Certificate</a>
+                                    <a class="link link-main" href="https://drive.google.com/file/d/1nbeEY4F_J_6KVphSEL-X8LsM8RS0YIih/view" target="_blank">Certificate</a>
                                     <div class="decor"></div>
                                 </td>
                             </tr>
@@ -260,7 +257,7 @@
                                 </td>
                                 <td class="colomn colomn-2">
                                     <div class="highlight">Programming and development web-based applications</div>
-                                    <a class="link link-main" href="https://drive.google.com/file/d/18X66zStz-x8Gic863EjblyALlG1cgTV_/view">Certificate</a>
+                                    <a class="link link-main" href="https://drive.google.com/file/d/18X66zStz-x8Gic863EjblyALlG1cgTV_/view/" target="_blank">Certificate</a>
                                     <div class="decor"></div>
                                 </td>
                             </tr>
@@ -270,6 +267,7 @@
             </section>
         </div>
     </wrapper>
+    <script type="module" src="./js/index.js"></script>
     <script src="https://kit.fontawesome.com/491ea5b732.js" crossorigin="anonymous"></script>
 </body>
 </html>
