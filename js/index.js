@@ -1,4 +1,4 @@
-import { createPDF } from "./createPDF.js";
+import createPDF from "./createPDF.js";
 
 const downloadButton = document.querySelector('.download-pdf');
 
