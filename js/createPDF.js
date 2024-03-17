@@ -1,8 +1,8 @@
-const API_URL = `http://localhost:5000/createPDF`;
+const API_URL = `https://cv-server-dtfy.onrender.com/createPDF`;
 
 export default function createPDF() {
     fetch(API_URL, {
-        method: 'POST'
+        method: 'GET',
     }).then(async res => {
         return res
             .arrayBuffer()
