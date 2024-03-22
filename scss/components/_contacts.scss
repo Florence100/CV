@@ -24,6 +24,9 @@
     @media screen and (max-width: $breakPointMobal) {
         width: 300px;
         margin-left: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     @media screen and (max-width: $breakPointMobalMedium) {

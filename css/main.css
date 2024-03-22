@@ -295,7 +295,10 @@ h2.title {
   @media screen and (max-width: 767px) {
     .contacts-info {
       width: 300px;
-      margin-left: 40px; } }
+      margin-left: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; } }
   @media screen and (max-width: 560px) {
     .contacts-info {
       width: 270px;
@@ -447,8 +450,8 @@ a.telegram:hover {
   top: 30px;
   right: 30px;
   cursor: pointer;
-  width: 23px;
-  height: 23px; }
+  width: 32px;
+  height: 32px; }
   @media screen and (max-width: 1279px) {
     .extra-features {
       top: 35px;
@@ -461,12 +464,18 @@ a.telegram:hover {
   @media screen and (max-width: 560px) {
     .extra-features {
       top: 15px;
-      right: 15px; } }
+      right: 15px;
+      width: 28px;
+      height: 28px; } }
 
 .loader {
   position: absolute;
-  top: -12px;
-  right: -12px;
-  width: 47px;
-  height: 47px;
-  display: none; }
+  display: none;
+  top: -2px;
+  right: -2px;
+  width: 36px;
+  height: 36px; }
+  @media screen and (max-width: 560px) {
+    .loader {
+      width: 32px;
+      height: 32px; } }
