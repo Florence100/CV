@@ -1,20 +1,18 @@
 .photo {
-    width: 100%;
+    width: 150px;
     height: 150px;
+    margin: 0 auto;
     margin-bottom: 60px;
+    background-image: url('../../assets/img/photo_1.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 -20px;
+    background-size: 115%;
+    border-radius: 50%;
+    opacity: 0.9;
 
     @media screen and (max-width: $breakPointMobal) {
         display: none;
     }
-}
-
-.photo img {
-    display: block;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 0 auto;
-    opacity: 0.8;
 }
 
 .photo-mobile {
@@ -22,12 +20,11 @@
 
     @media screen and (max-width: $breakPointMobal) {
         display: block;
-        margin: 0;
     }
 
     @media screen and (max-width: $breakPointMobalMedium) {
         position: absolute;
         top: 50px;
-        left: 0;
+        left: center;
     }
 }

@@ -17,12 +17,12 @@
     border: none;
     background-color: $secondColor;
 }
-    
+
 .progress::-webkit-progress-bar {
     border: none;
     background-color: $bgProgressColor;
 }
-    
+
 .progress::-webkit-progress-value {
     background-color: $secondColor;
 }

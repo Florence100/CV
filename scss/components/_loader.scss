@@ -1,13 +1,15 @@
 .loader {
     position: absolute;
     display: none;
-    top: -2px;
-    right: -2px;
-    width: 36px;
-    height: 36px;
+    top: -20px;
+    right: -20px;
+    width: 80px;
+    height: 80px;
 
     @media screen and (max-width: $breakPointMobalMedium) {
-        width: 32px;
-        height: 32px;
+        width: 64px;
+        height: 64px;
+        top: -15px;
+        right: -15px;
     }
 }

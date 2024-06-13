@@ -128,8 +128,8 @@ It contains styles for the main layout components such as header, footer, naviga
 .side-section {
   width: 32%;
   min-height: 100%;
-  background: #425e56;
-  color: #b9bbbe;
+  background: #4f4442;
+  color: #ebe9d9;
   padding: 35px 30px; }
   @media screen and (max-width: 767px) {
     .side-section {
@@ -157,7 +157,7 @@ It contains styles for the main layout components such as header, footer, naviga
       padding: 35px 20px 0 20px; } }
   @media screen and (max-width: 767px) {
     .header {
-      background: #425e56;
+      background: #4f4442;
       padding: 50px 35px 35px 35px; } }
   @media screen and (max-width: 560px) {
     .header {
@@ -166,17 +166,20 @@ It contains styles for the main layout components such as header, footer, naviga
       margin-bottom: 0px; } }
 
 .title {
-  color: #ac955b;
+  color: #d2b18e;
   text-transform: uppercase;
   margin: 25px 0;
   font-family: 'Raleway-ExtraLight';
   font-size: 16px; }
 
+.main-section h2.title {
+  color: #a28266; }
+
 .main-section h3.title {
   color: #2c3a4b;
   padding-bottom: 5px;
   margin: 25px 0 20px 0;
-  border-bottom: 1px solid #ac955b; }
+  border-bottom: 1px solid #a28266; }
 
 h1.title {
   color: #2c3a4b;
@@ -185,7 +188,7 @@ h1.title {
   line-height: 1; }
   @media screen and (max-width: 767px) {
     h1.title {
-      color: #b9bbbe; } }
+      color: #ebe9d9; } }
   @media screen and (max-width: 560px) {
     h1.title {
       font-size: 34px; } }
@@ -198,32 +201,30 @@ h2.title {
       font-size: 16px; } }
 
 .photo {
-  width: 100%;
+  width: 150px;
   height: 150px;
-  margin-bottom: 60px; }
+  margin: 0 auto;
+  margin-bottom: 60px;
+  background-image: url("../../assets/img/photo_1.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 -20px;
+  background-size: 115%;
+  border-radius: 50%;
+  opacity: 0.9; }
   @media screen and (max-width: 767px) {
     .photo {
       display: none; } }
-
-.photo img {
-  display: block;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin: 0 auto;
-  opacity: 0.8; }
 
 .photo-mobile {
   display: none; }
   @media screen and (max-width: 767px) {
     .photo-mobile {
-      display: block;
-      margin: 0; } }
+      display: block; } }
   @media screen and (max-width: 560px) {
     .photo-mobile {
       position: absolute;
       top: 50px;
-      left: 0; } }
+      left: center; } }
 
 .progress {
   width: 100%;
@@ -240,26 +241,26 @@ h2.title {
 
 .progress::-moz-progress-bar {
   border: none;
-  background-color: #ac955b; }
+  background-color: #a28266; }
 
 .progress::-webkit-progress-bar {
   border: none;
   background-color: rgba(225, 225, 225, 0.15); }
 
 .progress::-webkit-progress-value {
-  background-color: #ac955b; }
+  background-color: #a28266; }
 
 .link {
   display: block;
-  color: #b9bbbe;
+  color: #ebe9d9;
   transition: color 0.2 ease; }
   .link:hover {
-    color: #ac955b; }
+    color: #a28266; }
 
 .link-main {
   color: #2c3a4b; }
   .link-main:hover {
-    color: #ac955b; }
+    color: #a28266; }
 
 .personal-info {
   width: 50%; }
@@ -269,7 +270,9 @@ h2.title {
       margin-top: 40px; } }
   @media screen and (max-width: 767px) {
     .personal-info {
-      margin-top: 50px; } }
+      margin-top: 50px; }
+      .personal-info .title.job {
+        color: #d2b18e; } }
   @media screen and (max-width: 560px) {
     .personal-info {
       margin-top: 195px;
@@ -318,12 +321,12 @@ h2.title {
     .phone,
     .email,
     .telegram {
-      color: #b9bbbe; } }
+      color: #ebe9d9; } }
 
 a.email:hover,
 a.phone:hover,
 a.telegram:hover {
-  color: #ac955b; }
+  color: #a28266; }
 
 .icon {
   width: 35px;
@@ -338,7 +341,7 @@ a.telegram:hover {
 .telegram-value {
   width: 100%;
   height: 35px;
-  border-bottom: 1px solid #ac955b;
+  border-bottom: 1px solid #a28266;
   display: flex;
   align-items: center; }
 
@@ -361,7 +364,7 @@ a.telegram:hover {
   .table .colomn-1 {
     width: 40%;
     padding-right: 20px;
-    border-right: 1px solid #ac955b; }
+    border-right: 1px solid #a28266; }
     @media screen and (max-width: 1279px) {
       .table .colomn-1 {
         width: 35%;
@@ -471,11 +474,13 @@ a.telegram:hover {
 .loader {
   position: absolute;
   display: none;
-  top: -2px;
-  right: -2px;
-  width: 36px;
-  height: 36px; }
+  top: -20px;
+  right: -20px;
+  width: 80px;
+  height: 80px; }
   @media screen and (max-width: 560px) {
     .loader {
-      width: 32px;
-      height: 32px; } }
+      width: 64px;
+      height: 64px;
+      top: -15px;
+      right: -15px; } }

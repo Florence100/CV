@@ -8,6 +8,10 @@
 
     @media screen and (max-width: $breakPointMobal) {
         margin-top: 50px;
+
+        & .title.job {
+            color: $thirdColor;
+        }
     }
 
     @media screen and (max-width: $breakPointMobalMedium) {

@@ -9,7 +9,7 @@ export default function createPDF() {
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: './assets/animation/loader_1.json',
+        path: './assets/animation/loader_5.json',
     });
 
     downloadPdf.style.display = 'none';
