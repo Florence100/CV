@@ -383,15 +383,8 @@ a.telegram:hover {
   .table .highlight-upper {
     text-transform: uppercase; }
   .table ul {
-    margin-top: 20px;
-    margin-bottom: 40px; }
-    @media screen and (max-width: 1279px) {
-      .table ul {
-        margin-bottom: 30px; } }
-    @media screen and (max-width: 560px) {
-      .table ul {
-        margin-top: 10px;
-        margin-bottom: 20px; } }
+    margin-top: 10px;
+    margin-bottom: 20px; }
   .table ul.last {
     margin-bottom: 5px; }
   .table .padding {

@@ -51,17 +51,17 @@
     }
 
     & ul {
-        margin-top: 20px;
-        margin-bottom: 40px;
+        margin-top: 10px;
+        margin-bottom: 20px;
 
-        @media screen and (max-width: $breakPointTablet) {
-            margin-bottom: 30px;
-        }
+        // @media screen and (max-width: $breakPointTablet) {
+        //     margin-bottom: 30px;
+        // }
 
-        @media screen and (max-width: $breakPointMobalMedium) {
-            margin-top: 10px;
-            margin-bottom: 20px;
-        }
+        // @media screen and (max-width: $breakPointMobalMedium) {
+        //     margin-top: 10px;
+        //     margin-bottom: 20px;
+        // }
     }
 
     & ul.last {
