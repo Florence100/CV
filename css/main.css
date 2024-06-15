@@ -226,29 +226,44 @@ h2.title {
       top: 50px;
       left: center; } }
 
-.progress {
-  width: 100%;
-  height: 4px;
-  border: none;
-  background-color: rgba(225, 225, 225, 0.15);
+.progress-bar {
   position: relative;
-  top: -10px; }
-
-.label {
-  cursor: default;
-  text-transform: uppercase;
-  font-size: 14px; }
-
-.progress::-moz-progress-bar {
-  border: none;
-  background-color: #a28266; }
-
-.progress::-webkit-progress-bar {
-  border: none;
-  background-color: rgba(225, 225, 225, 0.15); }
-
-.progress::-webkit-progress-value {
-  background-color: #a28266; }
+  width: 100%;
+  height: 48px; }
+  .progress-bar .progress {
+    width: 100%;
+    height: 4px;
+    border: none;
+    background-color: rgba(225, 225, 225, 0.15);
+    position: absolute;
+    top: 30px;
+    left: 0; }
+  .progress-bar .label {
+    cursor: default;
+    text-transform: uppercase;
+    font-size: 14px; }
+  .progress-bar .progress::-moz-progress-bar {
+    border: none;
+    background-color: #a28266; }
+  .progress-bar .progress::-webkit-progress-bar {
+    border: none;
+    background-color: rgba(225, 225, 225, 0.15); }
+  .progress-bar .progress::-webkit-progress-value {
+    background-color: #a28266; }
+  .progress-bar .scale .markup {
+    height: 4px;
+    width: 1px;
+    position: absolute;
+    top: 30px;
+    background-color: #423938; }
+  .progress-bar .scale .markup-20 {
+    left: calc(20%); }
+  .progress-bar .scale .markup-40 {
+    left: calc(40%); }
+  .progress-bar .scale .markup-60 {
+    left: calc(60%); }
+  .progress-bar .scale .markup-80 {
+    left: calc(80%); }
 
 .link {
   display: block;

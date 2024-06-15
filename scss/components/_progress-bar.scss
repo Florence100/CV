@@ -1,28 +1,63 @@
-.progress {
-    width: 100%;
-    height: 4px;
-    border: none;
-    background-color: $bgProgressColor;
+.progress-bar {
     position: relative;
-    top: -10px;
+    width: 100%;
+    height: 48px;
+    // border: 1px dashed white;
+
+    .progress {
+        width: 100%;
+        height: 4px;
+        border: none;
+        background-color: $bgProgressColor;
+        position: absolute;
+        top: 30px;
+        left: 0;
+    }
+
+    .label {
+        cursor: default;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    .progress::-moz-progress-bar {
+        border: none;
+        background-color: $secondColor;
+    }
+
+    .progress::-webkit-progress-bar {
+        border: none;
+        background-color: $bgProgressColor;
+    }
+
+    .progress::-webkit-progress-value {
+        background-color: $secondColor;
+    }
+
+    .scale {
+        .markup {
+            height: 4px;
+            width: 1px;
+            position: absolute;
+            top: 30px;
+            background-color: rgb(66,57,56);
+        }
+
+        .markup-20 {
+            left: calc(20%);
+        }
+
+        .markup-40 {
+            left: calc(40%);
+        }
+
+        .markup-60 {
+            left: calc(60%);
+        }
+
+        .markup-80 {
+            left: calc(80%);
+        }
+    }
 }
 
-.label {
-    cursor: default;
-    text-transform: uppercase;
-    font-size: 14px;
-}
-
-.progress::-moz-progress-bar {
-    border: none;
-    background-color: $secondColor;
-}
-
-.progress::-webkit-progress-bar {
-    border: none;
-    background-color: $bgProgressColor;
-}
-
-.progress::-webkit-progress-value {
-    background-color: $secondColor;
-}
